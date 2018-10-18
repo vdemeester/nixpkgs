@@ -9,15 +9,15 @@
 with lib;
 
 let
-  version = "3.10.0";
+  version = "3.11.0";
   ver = stdenv.lib.elemAt (stdenv.lib.splitString "." version);
   versionMajor = ver 0;
   versionMinor = ver 1;
   versionPatch = ver 2;
-  gitCommit = "dd10d17";
+  gitCommit = "0cbc58b";
   # version is in vendor/k8s.io/kubernetes/pkg/version/base.go
-  k8sversion = "v1.10.0";
-  k8sgitcommit = "b81c8f8";
+  k8sversion = "v1.11.1";
+  k8sgitcommit = "d4cacc0";
   k8sgitMajor = "0";
   k8sgitMinor = "1";
 in stdenv.mkDerivation rec {
@@ -28,7 +28,7 @@ in stdenv.mkDerivation rec {
     owner = "openshift";
     repo = "origin";
     rev = "v${version}";
-    sha256 = "13aglz005jl48z17vnggkvr39l5h6jcqgkfyvkaz4c3jakms1hi9";
+    sha256 = "1haglz005jl48z17vnggkvr39l5h6jcqgkfyvkaz4c3jakms1hi9";
 };
 
   # go > 1.10

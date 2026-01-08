@@ -471,6 +471,7 @@ print OUT <<EOF;
   xf86-video-chips,
   xf86-video-cirrus,
   xf86-video-geode,
+  xf86-video-i128,
   xf86-video-nouveau,
   xf86-video-s3virge,
   xf86-video-v4l,
@@ -691,6 +692,7 @@ self: with self; {
   xf86videochips = xf86-video-chips;
   xf86videocirrus = xf86-video-cirrus;
   xf86videogeode = xf86-video-geode;
+  xf86videoi128 = xf86-video-i128;
   xf86videonouveau = xf86-video-nouveau;
   xf86videos3virge = xf86-video-s3virge;
   xf86videov4l = xf86-video-v4l;

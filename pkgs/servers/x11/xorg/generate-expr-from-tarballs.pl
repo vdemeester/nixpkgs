@@ -477,6 +477,7 @@ print OUT <<EOF;
   xf86-video-neomagic,
   xf86-video-nouveau,
   xf86-video-qxl,
+  xf86-video-r128,
   xf86-video-s3virge,
   xf86-video-v4l,
   xfd,
@@ -702,6 +703,7 @@ self: with self; {
   xf86videoneomagic = xf86-video-neomagic;
   xf86videonouveau = xf86-video-nouveau;
   xf86videoqxl = xf86-video-qxl;
+  xf86videor128 = xf86-video-r128;
   xf86videos3virge = xf86-video-s3virge;
   xf86videov4l = xf86-video-v4l;
   xkeyboardconfig = xkeyboard-config;

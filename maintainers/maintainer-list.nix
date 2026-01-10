@@ -17630,12 +17630,6 @@
       }
     ];
   };
-  mockersf = {
-    email = "francois.mockers@vleue.com";
-    github = "mockersf";
-    githubId = 8672791;
-    name = "François Mockers";
-  };
   modderme123 = {
     email = "modderme123@gmail.com";
     github = "milomg";

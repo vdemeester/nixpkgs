@@ -735,7 +735,6 @@ with lib.maintainers;
   # same as https://github.com/orgs/NixOS/teams/nix-team
   nix = {
     members = [
-      eelco
       mic92
       tomberek
       roberth

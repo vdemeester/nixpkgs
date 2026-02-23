@@ -9,16 +9,16 @@
 
 buildGoModule (finalAttrs: {
   pname = "lazyworktree";
-  version = "1.28.0";
+  version = "1.38.0";
 
   src = fetchFromGitHub {
     owner = "chmouel";
     repo = "lazyworktree";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-syfhjNsqRz9Gte514NcuP/J8NMGLEdsJrvnuqBHAnCc=";
+    hash = "sha256-7uzN0w59Vtw1p2R/l4T5nzCRhNoHe0gH3GUrSFkBN8U=";
   };
 
-  vendorHash = "sha256-BfQWSogSoD0c71CPMqhfK7F+TzZQt6+wNIzPlFQ2zPU=";
+  vendorHash = "sha256-Y4TZZ7Fhn1YSxG6YH0l0y0iWxgml93gOwKyTXWkjpqg=";
 
   nativeBuildInputs = [ installShellFiles ];
 
@@ -32,7 +32,9 @@ buildGoModule (finalAttrs: {
   ];
 
   postInstall = ''
-    install -Dm444 shell/functions.shell -t $out/share/lazyworktree
+    install -Dm444 shell/functions.bash -t $out/share/lazyworktree
+    install -Dm444 shell/functions.zsh -t $out/share/lazyworktree
+    install -Dm444 shell/functions.fish -t $out/share/lazyworktree
     installManPage lazyworktree.1
   '';
 
